@@ -9,7 +9,7 @@
 
 //     async function handleRegister() {
 //         try {
-//             await axios.post('http://localhost:3000/register', { name, email, password });
+//             await axios.post('https://expense-tracker-gbsp.onrender.com/register', { name, email, password });
 //             setPage('login');
 //         } catch (err) {
 //             setError('Error registering user');
@@ -119,7 +119,7 @@ function Register({ setPage }) {
 
   async function handleRegister() {
     try {
-      await axios.post('http://localhost:3000/register', { name, email, password });
+      await axios.post('https://expense-tracker-gbsp.onrender.com/register', { name, email, password });
       setPage('login');
     } catch (err) {
       setError('Registration failed. Email may already exist.');

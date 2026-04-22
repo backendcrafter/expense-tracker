@@ -176,7 +176,7 @@ function Dashboard({ setPage }) {
 
   async function fetchExpenses() {
     const token = localStorage.getItem('token');
-    const res = await axios.get('http://localhost:3000/expenses', {
+    const res = await axios.get('https://expense-tracker-gbsp.onrender.com/expenses', {
       headers: { Authorization: `Bearer ${token}` }
     });
     setExpenses(res.data.expenses);
@@ -185,7 +185,7 @@ function Dashboard({ setPage }) {
   async function addExpense() {
     if (!title || !amount || !category || !date) return;
     const token = localStorage.getItem('token');
-    await axios.post('http://localhost:3000/expenses',
+    await axios.post('https://expense-tracker-gbsp.onrender.com/expenses',
       { title, amount, category, date },
       { headers: { Authorization: `Bearer ${token}` }}
     );
@@ -195,7 +195,7 @@ function Dashboard({ setPage }) {
 
   async function deleteExpense(id) {
     const token = localStorage.getItem('token');
-    await axios.delete(`http://localhost:3000/expenses/${id}`, {
+    await axios.delete(`https://expense-tracker-gbsp.onrender.com/expenses/${id}`, {
       headers: { Authorization: `Bearer ${token}` }
     });
     fetchExpenses();
@@ -223,7 +223,7 @@ function Dashboard({ setPage }) {
 
   async function fetchBudget() {
     const token = localStorage.getItem('token');
-    const res = await axios.get('http://localhost:3000/budget', {
+    const res = await axios.get('https://expense-tracker-gbsp.onrender.com/budget', {
       headers: { Authorization: `Bearer ${token}` }
     });
     if (res.data.budget.length > 0) setBudget(res.data.budget[0]);
@@ -232,7 +232,7 @@ function Dashboard({ setPage }) {
   async function saveSalary() {
     const token = localStorage.getItem('token');
     const month = new Date().toISOString().slice(0, 7) + '-01';
-    await axios.post('http://localhost:3000/budget',
+    await axios.post('https://expense-tracker-gbsp.onrender.com/budget',
       { monthly_salary: salary, month },
       { headers: { Authorization: `Bearer ${token}` }}
     );
@@ -242,7 +242,7 @@ function Dashboard({ setPage }) {
   async function getInsights() {
     setLoadingInsights(true);
     const token = localStorage.getItem('token');
-    const res = await axios.post('http://localhost:3000/insights',
+    const res = await axios.post('https://expense-tracker-gbsp.onrender.com/insights',
       { expenses, budget: budget?.monthly_salary },
       { headers: { Authorization: `Bearer ${token}` }}
     );
