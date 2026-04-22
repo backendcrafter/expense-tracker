@@ -1,39 +1,3 @@
-// import { useState } from "react";
-// import axios from "axios";
-
-// function Register({ setPage }) {
-//     const [name, setName]= useState('');
-//     const [email, setEmail]= useState('');
-//     const [password, setPassword]= useState('');
-//     const [error, setError]= useState('');
-
-//     async function handleRegister() {
-//         try {
-//             await axios.post('https://expense-tracker-gbsp.onrender.com/register', { name, email, password });
-//             setPage('login');
-//         } catch (err) {
-//             setError('Error registering user');
-//         }
-//     }
-
-//     return (
-//         <div>
-//             <h2>Register</h2>
-//             <input placeholder="Name" value={name} onChange={e => setName(e.target.value)} />
-//             <input placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
-//             <input placeholder="Password" type="password" value={password} onChange={e => setPassword(e.target.value)} />
-//             <button onClick={handleRegister}>Register</button>
-//             {error && <p>{error}</p>}
-//             <p>Already have an account? <button onClick={() => setPage('login')}>Login</button></p>
-//         </div>
-//     );
-// }
-
-// export default Register;
-
-
-
-
 import { useState } from "react";
 import axios from "axios";
 
