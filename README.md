@@ -148,10 +148,11 @@ All advice is tailored to Indian financial context (₹, SIP, PPF, Indian market
 ## 📸 Screenshots
 
 ### Dashboard
-![Dashboard](screenshots/Screenshot_(40).png)
+![Dashboard](screenshots/dashboard.png)
 
 ### AI Insights
-![AI Insights](screenshots/insights.png)
+![AI Insights](screenshots/insights1.png)
+![AI Insights](screenshots/insights2.png)
 
 ---
 
