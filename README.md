@@ -155,13 +155,6 @@ All advice is tailored to Indian financial context (₹, SIP, PPF, Indian market
 
 ---
 
-## 👨‍💻 Author
-
-**Harsh Pratap Singh**  
-[GitHub](https://github.com/backendcrafter)
-
----
-
 ## 🔮 Future Improvements
 
 - Export expenses as PDF/CSV
@@ -169,3 +162,10 @@ All advice is tailored to Indian financial context (₹, SIP, PPF, Indian market
 - Bank statement import
 - Multi-currency support
 - Mobile app (React Native)
+
+---
+
+## 👨‍💻 Author
+
+**Harsh Pratap Singh**  
+[GitHub](https://github.com/backendcrafter)
