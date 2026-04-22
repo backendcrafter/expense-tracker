@@ -1,38 +1,3 @@
-// import { useState } from 'react';
-// import axios from 'axios';
-
-// function Login({ setPage }) {
-//   const [email, setEmail] = useState('');
-//   const [password, setPassword] = useState('');
-//   const [error, setError] = useState('');
-
-//   async function handleLogin() {
-//     try {
-//       const res = await axios.post('https://expense-tracker-gbsp.onrender.com/login', { email, password });
-//       localStorage.setItem('token', res.data.token);
-//       setPage('dashboard');
-//     } catch (err) {
-//       setError('Invalid email or password');
-//     }
-//   }
-
-//   return (
-//     <div>
-//       <h2>Login</h2>
-//       <input placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
-//       <input placeholder="Password" type="password" value={password} onChange={e => setPassword(e.target.value)} />
-//       <button onClick={handleLogin}>Login</button>
-//       {error && <p>{error}</p>}
-//       <p>No account? <button onClick={() => setPage('register')}>Register</button></p>
-//     </div>
-//   );
-// }
-
-// export default Login;
-
-
-
-
 import { useState } from "react";
 import axios from "axios";
 
