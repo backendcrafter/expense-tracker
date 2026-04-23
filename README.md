@@ -166,6 +166,10 @@ All advice is tailored to Indian financial context (₹, SIP, PPF, Indian market
 
 ---
 
+## Note: Backend may take 30-50 seconds to respond on first load due to Render free tier cold starts.
+
+---
+
 ## 👨‍💻 Author
 
 **Harsh Pratap Singh**  
