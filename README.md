@@ -2,6 +2,8 @@
 
 A full-stack expense tracking application with AI-powered financial insights, built with Node.js, PostgreSQL, and React.
 
+**Live Demo → [expanse-tracker web app](https://expense-tracker-qx5c-h8fgzs9av.vercel.app)**
+
 ---
 
 ## ✨ Features
