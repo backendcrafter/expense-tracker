@@ -4,12 +4,6 @@ A full-stack expense tracking application with AI-powered financial insights, bu
 
 ---
 
-## 🚀 Live Demo
-
-> Coming soon after deployment
-
----
-
 ## ✨ Features
 
 - 🔐 **JWT Authentication** — Secure register/login with bcrypt password hashing
